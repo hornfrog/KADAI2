@@ -19,7 +19,7 @@ function displayTime() {
   const ms = String(currentTime.getMilliseconds()).padStart(1, "0");
 
   $watch.textContent = `${h}:${m}:${s}:${ms}`; //textContent HTMLを解釈せず、そのまま文字として出力
-  timeoutID = setTimeout(displayTime, 1000); // 2つ目の引数にプログラム実行の時間を持たせる、ミリ秒で記載
+  timeoutID = setTimeout(displayTime, 100); // 2つ目の引数にプログラム実行の時間を持たせる、ミリ秒で記載
 }
 
 // スタートボタンがクリックされたら時間を進める
